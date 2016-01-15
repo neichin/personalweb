@@ -158,7 +158,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-headingSmall {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 .intro-header .site-headingSmall {
