@@ -1,11 +1,11 @@
 # Site settings
-title: "MADness"
-description: MAD for Jekyll
+title: "Nacho Merino Personal Site"
+description: Just a personal site
 logo: favicon.png
-discus_shortname: MADness
+discus_shortname: N.Merino
 header-img: img/home-bg.jpg
-email: mad@ness.com
-url: http://madforjekyll.github.io
+email: kaneylone@hotmail.com
+url: http://neichin.github.io/personalweb
 search: true
 share: true
 comments: true

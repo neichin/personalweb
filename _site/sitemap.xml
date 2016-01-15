@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/writing/markdown-cheatsheet/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/markdown-cheatsheet/</loc>
       
         <lastmod>2015-11-25T13:00:00+01:00</lastmod>
       
@@ -18,7 +18,7 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/writing/lightbox/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/lightbox/</loc>
       
         <lastmod>2015-11-23T13:00:00+01:00</lastmod>
       
@@ -34,24 +34,9 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/404/</loc>
+      <loc>http://neichin.github.io/personalweb/404/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/writing/category/cat01/</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -64,24 +49,9 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/writing/category/cat02/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/category/cat01/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/writing/category/cat03/</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -94,24 +64,9 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/writing/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/category/cat02/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/gallery/</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -124,24 +79,9 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/about/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/category/cat03/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -154,41 +94,9 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/search/</loc>
+      <loc>http://neichin.github.io/personalweb/writing/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/search.json</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-  
-    
-    <url>
-      <loc>http://madforjekyll.github.io/writing/tag/tag-name-one/</loc>
-      
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -201,9 +109,101 @@
   
     
     <url>
-      <loc>http://madforjekyll.github.io/writing/tag/tag-name-two/</loc>
+      <loc>http://neichin.github.io/personalweb/gallery/</loc>
       
-        <lastmod>2016-01-15T16:00:50+01:00</lastmod>
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/about/</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/search/</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/search.json</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/writing/tag/tag-name-one/</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://neichin.github.io/personalweb/writing/tag/tag-name-two/</loc>
+      
+        <lastmod>2016-01-15T18:54:41+01:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
