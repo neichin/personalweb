@@ -10,8 +10,8 @@ search: true
 share: true
 comments: true
 
+gems: [jekyll-paginate]
 baseurl: /personalweb
-
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
 readtime: true
 
@@ -47,7 +47,7 @@ destination:      	 ./_site
 port:             	 4000
 
 # Build settings
-highlighter:         rouge
+highlighter:         null
 markdown:           redcarpet
 redcarpet:
     extensions:     
