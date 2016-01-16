@@ -51,6 +51,18 @@
     list-style-type: none;
 }
 
+.publication{
+   width: 100%;
+   background-color: #30292B;
+   border-bottom-style: outset;
+   border-width: thin;
+   border-color: #080808;
+}
+.publication > a {
+    color: #D6799D;
+    text-decoration: none;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .intro {
