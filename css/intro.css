@@ -15,6 +15,16 @@
 .col-md-right-cntxt {
     text-align:right;
 }
+.col-md-left-cntct-long {
+    text-align:right;
+    display: block;
+    float: left;
+    width: 96.666666%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .col-md-left-cntct {
     text-align:right;
     display: block;

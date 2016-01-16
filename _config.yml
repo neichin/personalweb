@@ -3,8 +3,8 @@ title: "Nacho Merino Personal Site"
 description: Just a personal site
 logo: favicon.png
 discus_shortname: N.Merino
-header-img: img/home-bg.jpg
-email: kaneylone@hotmail.com
+header-img: img/islandia1.jpg
+email: ignacio.merino.cue@gmail.com
 url: http://neichin.github.io/personalweb
 search: true
 share: true
@@ -26,13 +26,13 @@ owner:
   description:    MAD for Jekyll
 
 # Social networking links used in footer. Update and remove as you like.
-twitter_username: MAD4Jekyll
-facebook_username: MAD4Jekyll
-github_username: MAD4Jekyll
-deviantart_username: MAD4Jekyll
-500px_username: MAD4Jekyll
-flickr_username: MAD4Jekyll
-instagram_username: MAD4Jekyll
+twitter_username:
+facebook_username:
+github_username: neichin
+deviantart_username:
+500px_username:
+flickr_username:
+instagram_username:
 
  
 # Internal nav
