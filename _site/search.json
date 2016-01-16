@@ -45,6 +45,65 @@
   
    {
      
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+        "title"    : "Writing",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/personalweb/results/",
+        "date"     : "",
+        "content"   : "\n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
+     
+   } ,
+  
+   {
+     
         "title"    : "Writing",
         "category" : "",
         "tags"     : "",
@@ -56,12 +115,34 @@
   
    {
      
-        "title"    : "Gallery",
+        "title"    : "Nacho Merino",
         "category" : "",
         "tags"     : "",
-        "url"      : "/personalweb/gallery/",
+        "url"      : "/personalweb/",
         "date"     : "",
-        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<h3><a href=\"http://flexslider.woothemes.com/basic-slider-with-caption.html\">FLEXSLIDER</a> is here!!!</h3> \n  \n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"../css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n\t<!-- Modernizr -->\n  <script src=\"../js/modernizr.js\"></script>\n</head>\n\n    <body>\n  <!-- slider -->\n    <section class=\"slider\">\n\t<div class=\"flexslider\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n      </section>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n<script src=\"http://code.jquery.com/jquery-1.11.3.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"../js/jquery.flexslider.js\"></script>\n\n  <script type=\"text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: \"false\",\n        slideshowSpeed: \"12000\",\n        pausePlay: \"true\",\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/YOT6kS8YtEA\">UNSPLASH</a>\n\n\n\n</body></html>\n"
+        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/intro.css\" type=\"text/css\" media=\"screen\" />\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n\t<!-- Modernizr -->\n  <script src=\"js/modernizr.js\"></script>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"/personalweb/js/jquery.flexslider.js\"></script>\n\n  <!-- Back To Top -->\n  <script type=\"/personalweb/text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: false,\n        slideshowSpeed: 12000,\n        pausePlay: true,\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n</head>\n\n<body>\n\n <!-- intro -->\n<div class=\"intro\">\n  <div class=\"row\">\n\n        <div class=\"col-md-left-cntct-long\">     \n<h2>Phd student at <a href=\"https://lgge.osug.fr/\">LGGE laboratory</a> in Grenoble (France).</h2>\n<h4>Southern Ocean. Sea-Ice. Icebergs Modelling. Glacier dynamics <br>\nAntarctica Ice Sheet. Climate</h4>\n\t\t</div>   \n\t\t<div class=\"col-md-left-cntct\"> \n<h3>\n<b>This website contains</b>:\n<br>\n<h8><br></h8>\n<b>--Recent <a href=\"/personalweb/publications/\">'Publications and Comunications.'</a></b>\n<br>\n<h8><br></h8>\n<b>--Some <a href=\"/personalweb/materials/\">'Results and Material'</a></b>\n<br>\n<h8><br></h8>\n<b>--Some <a href=\"/personalweb/materials/\">'Tips and tricks'</a> in Python</b>\n<br>\n<h8><br></h8>\n<b>--About the <a href=\"/personalweb/Materials/\">'Mountains and Travels'</a>\n</h3> \n        </div>  \n\n\n        <div class=\"col-md-right-cntct\">\n    \n  <ul class=\"faul\">\n<p class=\"lead\"><h4>Links</h4></p>\n                      \n\n\n                    \n\n                    \n                    <li>\n   <a href=\"https://github.com/neichin\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        <span class=\"h6 header-font\">Github</span></a>\n                    </li>\n                   \n\n\n\n\n\n\n\n\n\n\n     <li>\n    <a href=\"mailto:ignacio.merino.cue@gmail.com\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">Email </span>\n    </a> </li>\n    \n     <li>\n    <a href=\"http://alnick.com\"\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">SquashAlNick </span>\n    </a> </li>\n    \n    <li>\n    <a href=\"http://lgge.osug.fr\"\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">LGGE</span>\n    </a> </li>\n                </ul>\n\n\n         </div>  \n \n </div>\n</div>\n\n\n<!-- slider -->\n\n\t<div class=\"flexslider\" style=\"display:true;\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"/personalweb/img/islandia1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/personalweb/islandia2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/personalweb/img/slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n\n  <!-- slider -->\n    <section class=\"slider\">\n\t<div class=\"flexslider\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n      </section>\n\n\n \n<br>\n<h6><p>Image Source: <a href=\"img/islandia2.jpg\">Nowhere in Iceland</a></p></h6>\n\n\n\n\n       </body>\n    </html>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Writing",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/personalweb/tips/",
+        "date"     : "",
+        "content"   : "\n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Publications",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/personalweb/publications/",
+        "date"     : "",
+        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/intro.css\" type=\"text/css\" media=\"screen\" />\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n\t<!-- Modernizr -->\n  <script src=\"js/modernizr.js\"></script>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"/personalweb/js/jquery.flexslider.js\"></script>\n\n  <!-- Back To Top -->\n  <script type=\"/personalweb/text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: false,\n        slideshowSpeed: 12000,\n        pausePlay: true,\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n</head>\n\n<body>\n\n <!-- intro -->\n<div class=\"intro\">\n  <div class=\"row\">\n        <div class=\"columns\">     \n<h2>Phd student at <a href=\"https://lgge.osug.fr/\">LGGE laboratory</a> in Grenoble (France).</h2>\n<h4>Southern Ocean. Sea-Ice. Icebergs Modelling. Glacier dynamics <br>\nAntarctica Ice Sheet. Climate</h4>\n\t\t</div>   \n  </div>\n</div>\n\n       </body>\n    </html>\n"
      
    } ,
   
@@ -78,12 +159,23 @@
   
    {
      
-        "title"    : "Nacho Merino",
+        "title"    : "Gallery",
         "category" : "",
         "tags"     : "",
-        "url"      : "/personalweb/",
+        "url"      : "/personalweb/gallery/",
         "date"     : "",
-        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/intro.css\" type=\"text/css\" media=\"screen\" />\n\t<link rel=\"stylesheet\" href=\"/personalweb/css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n\t<!-- Modernizr -->\n  <script src=\"js/modernizr.js\"></script>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"/personalweb/js/jquery.flexslider.js\"></script>\n\n  <!-- Back To Top -->\n  <script type=\"/personalweb/text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: false,\n        slideshowSpeed: 12000,\n        pausePlay: true,\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n</head>\n\n<body>\n\n <!-- intro -->\n<div class=\"intro\">\n  <div class=\"row\">\n\n        <div class=\"col-md-left-cntct-long\">     \n<h2>Phd student at <a href=\"https://lgge.osug.fr/\">LGGE laboratory</a> in Grenoble (France).</h2>\n<h4>Oceans. Sea Ice. Icebergs Modelling. Glacier dynamics <br>\nAntarctica Ice Sheet. Climate</h4>\n\t\t</div>   \n\t\t<div class=\"col-md-left-cntct\"> \n<h3>\n<b>This website contains</b>:\n<br>\n<h8><br></h8>\n<b>--Recent <a href=\"/personalweb/publications/\">'Publications'</a></b>\n<br>\n<h8><br></h8>\n<b>--Some <a href=\"/personalweb/materials/\">'Results and Material'</a></b>\n<br>\n<h8><br></h8>\n<b>--Some <a href=\"/personalweb/materials/\">'Tips and tricks'</a>in Python</b>\n<br>\n<h8><br></h8>\n<b>--About the <a href=\"/personalweb/Materials/\">'mountains'</a></b> and <a href=\"/personalweb/travels/\">travels</a>\n</h3> \n        </div>  \n\n\n        <div class=\"col-md-right-cntct\">\n    \n  <ul class=\"faul\">\n<p class=\"lead\"><h4>Links</h4></p>\n                      \n\n\n                    \n\n                    \n                    <li>\n   <a href=\"https://github.com/neichin\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n         <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i>\n              <i class=\"fa fa-github fa-stack-1x fa-inverse\"></i>\n                     </span>\n                        <span class=\"h6 header-font\">Github</span></a>\n                    </li>\n                   \n\n\n\n\n\n\n\n\n\n\n     <li>\n    <a href=\"mailto:ignacio.merino.cue@gmail.com\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">Email </span>\n    </a> </li>\n    \n     <li>\n    <a href=\"http://alnick.com\"\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">SquashAlNick </span>\n    </a> </li>\n    \n    <li>\n    <a href=\"http://lgge.osug.fr\"\" style=\"\ncolor:#877070;font-size:.25em;text-decoration:none;\">\n      <span class=\"fa-stack fa-lg\">\n            <i class=\"fa fa-circle fa-stack-2x\"></i> \n              <i class=\"fa fa-envelope-o fa-stack-1x fa-inverse\"></i></span>\n      <span class=\"h6 header-font\">LGGE</span>\n    </a> </li>\n                </ul>\n\n\n         </div>  \n \n </div>\n</div>\n\n\n<!-- slider -->\n\n\t<div class=\"flexslider\" style=\"display:true;\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"/personalweb/img/islandia1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/personalweb/islandia2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"/personalweb/img/slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n\n  <!-- slider -->\n    <section class=\"slider\">\n\t<div class=\"flexslider\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n      </section>\n\n\n \n<br>\n<h6><p>Image Source: <a href=\"img/islandia2.jpg\">Nowhere in Iceland</a></p></h6>\n\n\n\n\n       </body>\n    </html>\n"
+        "content"   : "<html class=\"no-js\" lang=\"en\">\n<head>\n\t<meta content=\"charset=utf-8\">\n\n<h3><a href=\"http://flexslider.woothemes.com/basic-slider-with-caption.html\">FLEXSLIDER</a> is here!!!</h3> \n  \n<!-- CSS -->\n\t<link rel=\"stylesheet\" href=\"../css/flexslider.css\" type=\"text/css\" media=\"screen\" />\n\n\t<!-- Modernizr -->\n  <script src=\"../js/modernizr.js\"></script>\n</head>\n\n    <body>\n  <!-- slider -->\n    <section class=\"slider\">\n\t<div class=\"flexslider\">\n  <ul class=\"slides\">\n    <li>\n      <img src=\"slider/bg1.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg2.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n    <li>\n      <img src=\"slider/bg3.jpg\" />\n<p class=\"flex-caption\">Source: <a href=\"https://unsplash.com/\">Unsplash</a></p>\n    </li>\n      </ul>\n</div>\n      </section>\n\n<!-- jQuery -->\n  <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js\"></script>\n<script src=\"http://code.jquery.com/jquery-1.11.3.min.js\"></script>\n\n  <!-- FlexSlider -->\n  <script defer src=\"../js/jquery.flexslider.js\"></script>\n\n  <script type=\"text/javascript\">\n    $(function(){\n      SyntaxHighlighter.all();\n    });\n    $(window).load(function(){\n      $('.flexslider').flexslider({\n        animation: \"slide\",\n        slideshow: \"false\",\n        slideshowSpeed: \"12000\",\n        pausePlay: \"true\",\n        start: function(slider){\n          $('body').removeClass('loading');\n        }\n      });\n    });\n  </script>\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/YOT6kS8YtEA\">UNSPLASH</a>\n\n\n\n</body></html>\n"
+     
+   } ,
+  
+   {
+     
+        "title"    : "Writing",
+        "category" : "",
+        "tags"     : "",
+        "url"      : "/personalweb/travels/",
+        "date"     : "",
+        "content"   : "\n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
      
    } ,
   
@@ -95,6 +187,38 @@
         "url"      : "/personalweb/search/",
         "date"     : "",
         "content"   : "<style type=\"text/css\">\n            \n      #search-input {\n        display: inline-block;\n        color: #008989;\n        background-color: #30292b;\n        border-color: #223333;\n        padding: .5em;\n        width: 100%;\n        font-size: 0.8em;\n      }\n        \n         #search-input:focus {\n        display: inline-block;\n        color: #008989;\n        background-color: #30292b;\n        border-color: #223333;\n        border-width: thick;\n        border-style: outset;\n        box-shadow: -1px 1px 5px 5px #624747;\n        outline: 0;\n        width: 100%;\n        font-size: 0.8em;\n              }\n\n    </style>\n\n<!-- Html Elements for Search -->\n<input type=\"text\" id=\"search-input\" placeholder=\"Enter keywords...\">\n<ul id=\"results-container\" style=\"list-style-type: none;\"></ul>    \n\n<!-- Script pointing to jekyll-search.js -->\n<script src=\"/personalweb/js/jekyll-search.js\" type=\"text/javascript\"></script>\n\n\n    <script type=\"text/javascript\">\n      SimpleJekyllSearch({\n        searchInput: document.getElementById('search-input'),\n        resultsContainer: document.getElementById('results-container'),\n        json: '/personalweb/search.json',\n        searchResultTemplate: '<li><a href=\"{url}\" title=\"{desc}\">{title}</a></li>',\n        noResultsText: 'No results found',\n        limit: 10,\n        fuzzy: true,\n        exclude: ['Welcome']\n      })\n    </script>\n\n<br>\n  <div id=\"tags\">\n  \t<h5>tag cloud</h5>\n   \n\n <span class=\"site-tag\">\n    <a href=\"/writing/tag/tag-name-one/\"\n        style=\"font-size: 88%\">\n            tag name one (2)\n    </a>\n</span>&nbsp;\n <span class=\"site-tag\">\n    <a href=\"/writing/tag/tag-name-two/\"\n        style=\"font-size: 88%\">\n            tag name two (2)\n    </a>\n</span>\n\n</div>\n\n\n<style>\n.site-tag a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n<br>\n  <div id=\"categories\">\n  \t<h5>categories</h5>\n   \n\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat01/\">\n            cat01 (1)\n    </a>\n</span>&nbsp;\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat02/\">\n            cat02 (1)\n    </a>\n</span>&nbsp;\n <span class=\"site-category\">\n    <a href=\"/writing/category/cat03/\">\n            cat03 (1)\n    </a>\n</span>\n\n</div>\n\n\n<style>\n.site-category a {\n    display: inline-block;\n    margin-right: 12px;\n}\n</style>\n\n<br>\n<h6>Image Source: <a href=\"https://source.unsplash.com/NuE8Nu3otjo\">UNSPLASH</a></h6>\n\n"
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
+     
+   } ,
+  
+   {
      
    } ,
   
