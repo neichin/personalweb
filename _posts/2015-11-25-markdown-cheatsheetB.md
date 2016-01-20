@@ -22,9 +22,10 @@ The basic idea of the animation module is yo create and update function to be ca
 The difficult part is to clean the previously plotted data without the necessity to create new axes. This is specially interesting in my case because my axes are produced with a very heavy routine.
 My initial idea (the most clean and elegant) was to create the axes once, and use the deepcopy method of the copy module at the interior of the update function. This would allow me to plot a new scatter plot every time the update function is called.
 Sadly, deepcopy method crashes with axis objects:
-```
-NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead. 
 
+```
+
+NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead. 
 ```
 The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Those methods those does not seems to be implemented yet with the cartopy interface, so they does not take the transformation argument. and the updated data cannot be projected.
 
