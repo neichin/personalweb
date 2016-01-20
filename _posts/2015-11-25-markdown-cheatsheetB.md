@@ -13,12 +13,25 @@ categories: [Nemo, Python]
 
 ## Do you want to deal with map coordinates projections in Python?
 
-### Cartopy is the best solutions I found to do so. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates.
+#### Cartopy is the best solutions I found to do so. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates.
 
-### In this example I want to show how to easily produce a .mp4 video with some ORCA025 NEMO Ocean Model results. 
+#### Some problems come through when we want to animate our NEMO results. In this post we'll try to deal with them in the asiest way
+ 
+####The easiest way to produce animations with Python is using the animation module of Matplotlib. Hopefully the Python library Cartopy allow us to deal with geospatial coordinates using Matplotlib at the same time.
+The basic idea of the animation module is yo create and update function to be called recursively by the animation generator. This update function produce a set of images that will be merged when the save method is called.
+The difficult part is to clean the previously plotted data without the necessity to create new axes. This is specially interesting in my case because my axes are produced with a very heavy routine.
+My initial idea (the most clean and elegant) was to create the axes once, and use the deepcopy method of the copy module at the interior of the update function. This would allow me to plot a new scatter plot every time the update function is called.
+Sadly, deepcopy method crashes with axis objects:
+```
+NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead. 
 
-### The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).
-### Main looks as simple as this:
+```
+The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Those methods those does not seems to be implemented yet with the cartopy interface, so they does not take the transformation argument. and the updated data cannot be projected.
+
+Finally the best and quickest solution is to use the remove() method.
+
+#### The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).
+#### Main looks as simple as this:
 
 ```python
 
@@ -63,7 +76,7 @@ if __name__ == '__main__':
     #a.show()
 ```
 
-### The main basically open the data and create and object of the class animationGeneral. This object is the film with the given name.
+### The main routine basically open the data and create and object of the class animationGeneral. This object is the film with the given name.
 
 
 ```python
@@ -133,6 +146,9 @@ class animationGeneral(object):
     def show(self):
         plt.show()
 ```
+
+#### Since The Antarctic continent is plotted using the very heavy routine draAntarctica, axes has to be defined out of the update function, so the routine will be called once.
+the set_offsets and set_array matplotlib functions does not seems to work properly when using cartopy. The self.scat2.remove() call is the only way to erase the previously plotted data by wonserving the axis
 
 
 
