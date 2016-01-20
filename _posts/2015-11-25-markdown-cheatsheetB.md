@@ -9,78 +9,129 @@ thumbnail: /img/blog/thumbs/thumb02.png
 tags: [Nemo, Cartopy, Python]
 categories: [Nemo, Python]
 ---
-> Cartopy Nemo and monthly data ...
+#Cartopy Nemo and monthly data ...
 
-> Do you want to deal with map coordinates projections in Python?
+## Do you want to deal with map coordinates projections in Python?
 
-Cartopy is the best solutions I found to do so. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates.
+### Cartopy is the best solutions I found to do so. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates.
 
-In this example I want to show how to easily produce a .mp4 video with some ORCA025 NEMO Ocean Model results. 
+### In this example I want to show how to easily produce a .mp4 video with some ORCA025 NEMO Ocean Model results. 
+
+### The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).
+### Main looks as simple as this:
 
 ```python
 
+import netCDF4
+import numpy as np
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import pylab as m
+import matplotlib.cm as cm
+from matplotlib import animation
+from matplotlib.colors import LogNorm
+
+if __name__ == '__main__':
+    
+    #opening lon and lat values
+    ncfile = netCDF4.Dataset('/Path/to/Data/mesh_hgr.nc','a')
+    lonVar= np.array(ncfile.variables['nav_lon'])[0:300,:]
+    latVar= np.array(ncfile.variables['nav_lat'])[0:300,:]
+    ncfile.close()
+    
+    #Opening the Icebergs Flux Data
+    path='/Path/to/Data/Climato_Icebergs.nc'
+    ncfile = netCDF4.Dataset(path,'a')
+    RunoffVar = np.array(ncfile.variables['Melt'])[:,0:300,:]*3600*24 #Kg/s-->mm/day
+    ncfile.close()
+    
+    ChampVar=RunoffVar
+    
+    #The MP4 file I want to produce
+    animationname=path+'/test.mp4'
+    
+    #aniationGeneral(Field I want to plot,
+    #				Time steps , 
+    #				Longitud Field, 
+    #				Latitud Field,
+    #				Min Value of the colorbar,
+    #				Max Value of the colorbar,
+    #				File name
+    a = animationGeneral(ChampVar,12,lonVar,latVar,-1,1,animationname)
+    
+    #Show at the end
+    #a.show()
+```
+
+### The main basically open the data and create and object of the class animationGeneral. This object is the film with the given name.
+
+
+```python
 class animationGeneral(object):
 # First set up the figure, the axis, and the plot element we want to animate
     def __init__(self, champ, stepNum,lon,lat,vmin,vmax,animationname):
-        self.drawCMP=True
+    	#Global definitions
         self.MassVar=champ
         self.lonVar=lon
         self.latVar=lat
         self.t=0
         self.vmin=vmin
         self.vmax=vmax
+        
+        #Figure
         self.fig = plt.figure()
-        #anim = animation.FuncAnimation(self.fig, self.update,np.arange(0,stepNum), init_func=self.setup_plot, interval=1, blit=True)
+        
+        #Axes definition
+        self.ax = plt.axes(projection=ccrs.SouthPolarStereo())
+        self.ax.set_extent([-200, 200, -45, -45],ccrs.PlateCarree())
+        
+        #The plot to animate
+        self.scat2=self.ax.scatter(0, 90, c=1
+            ,vmax=self.vmax
+            ,vmin=self.vmin
+            #,cmap='coolwarm'
+            , norm = LogNorm()
+            ,transform=ccrs.PlateCarree(),edgecolor='none',s=0.6)
+        cbar=plt.colorbar(self.scat2)
+        cbar.set_label('Melt water Flux (mm/yr)')
+        
+        #Adding my own Antarctica graphics
+        drawAntarctica(self.ax)
+        
+        #Animation definitio
         anim = animation.FuncAnimation(self.fig, self.update,np.arange(stepNum), interval=1, blit=False)
+        
+        #Writer FFMpeg needed for mp4 film
         mywriter = animation.FFMpegWriter()
         anim.save(animationname, writer=mywriter,fps=1, extra_args=['-vcodec', 'libx264'])
         
-    
-    
-    
-    
+    #No init_plot needed
     def setup_plot(self):
+
+
     
-    # animation function.  This is called sequentially
+    # animation function to be called nsteps times plus the initialisation since init_func isn't defined
     def update(self,i):
         t=i
         print t,'setup'
-        self.fig.clear()
-        ax = plt.axes(projection=ccrs.SouthPolarStereo())
-        ax.set_extent([-200, 200, -45, -45],ccrs.PlateCarree())
-        ax.coastlines()
+        
+        #Index of the dat to be extrated
         index=np.where(self.MassVar[t,:,:]*(self.latVar[:,:]<-30)!=0.)
-        scat2=ax.scatter(self.lonVar[index], self.latVar[index], c=self.MassVar[t,index[0],index[1]]
+        #Remove previous data plotted
+        self.scat2.remove()
+        #The plot with Logaritmic scale
+        self.scat2=self.ax.scatter(self.lonVar[index], self.latVar[index], c=self.MassVar[t,index[0],index[1]]
             ,vmax=self.vmax
             ,vmin=self.vmin
+            #,cmap='coolwarm'
             , norm = LogNorm()
-            ,transform=ccrs.PlateCarree()
-            ,edgecolor='none',s=0.6)
-        cbar=plt.colorbar(scat2)
-        cbar.set_label('hola')
-        return scat2,
+            ,transform=ccrs.PlateCarree(),edgecolor='none',s=0.6)
+        
+        return self.scat2,    
 
+    
     def show(self):
         plt.show()
-
-if __name__ == '__main__':
-    
-    ncfile = netCDF4.Dataset('/Users/imerino/Documents/These/python/Files/mesh_hgr.nc','a')
-    lonVar= np.array(ncfile.variables['nav_lon'])[0:300,:]
-    latVar= np.array(ncfile.variables['nav_lat'])[0:300,:]
-    e1tVar= np.array(ncfile.variables['e1t'])[:,0:300,:]
-    e2tVar= np.array(ncfile.variables['e2t'])[:,0:300,:]
-    ncfile.close()
-    
-    path='/Users/imerino/Documents/These/Results/ClimatoICB/climatoMonthGNM016_1998-2009.nc'
-    ncfile = netCDF4.Dataset(path,'a')
-    RunoffVar = np.array(ncfile.variables['Melt'])[:,0:300,:]*3600*24 #Kg/s-->mm/day
-    ncfile.close()
-    
-    ChampVar=RunoffVar
-    animationname=path+'/test.mp4'
-    a = animationGeneral(ChampVar,12,lonVar,latVar,-1,1,animationname)
-    #a.show()
 ```
 
 
