@@ -1,14 +1,89 @@
 ---
 layout: post
-title: Markdown Cheatsheet
-subtitle: This is Markdown Cheatsheet for MAD4Jekyll
-date:       2015-11-25 12:00:00
-author:     "MADness"
+title: Animations with Cartopy in NEMO
+subtitle: 
+date:       2016-1-20 12:00:00
+author:     "Nacho"
 header-img: "img/blog/header/post-bg-02.jpg"
 thumbnail: /img/blog/thumbs/thumb02.png
-tags: [tag-name-one, tag-name-two]
-categories: [cat01, cat02]
+tags: [Nemo, Cartopy, Python]
+categories: [Nemo, Python]
 ---
+> Cartopy Nemo and monthly data ...
+
+> Do you want to deal with map coordinates projections in Python?
+
+Cartopy is the best solutions I found to do so. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates.
+
+In this example I want to show how to easily produce a .mp4 video with some ORCA025 NEMO Ocean Model results. 
+
+```python
+
+class animationGeneral(object):
+# First set up the figure, the axis, and the plot element we want to animate
+    def __init__(self, champ, stepNum,lon,lat,vmin,vmax,animationname):
+        self.drawCMP=True
+        self.MassVar=champ
+        self.lonVar=lon
+        self.latVar=lat
+        self.t=0
+        self.vmin=vmin
+        self.vmax=vmax
+        self.fig = plt.figure()
+        #anim = animation.FuncAnimation(self.fig, self.update,np.arange(0,stepNum), init_func=self.setup_plot, interval=1, blit=True)
+        anim = animation.FuncAnimation(self.fig, self.update,np.arange(stepNum), interval=1, blit=False)
+        mywriter = animation.FFMpegWriter()
+        anim.save(animationname, writer=mywriter,fps=1, extra_args=['-vcodec', 'libx264'])
+        
+    
+    
+    
+    
+    def setup_plot(self):
+    
+    # animation function.  This is called sequentially
+    def update(self,i):
+        t=i
+        print t,'setup'
+        self.fig.clear()
+        ax = plt.axes(projection=ccrs.SouthPolarStereo())
+        ax.set_extent([-200, 200, -45, -45],ccrs.PlateCarree())
+        ax.coastlines()
+        index=np.where(self.MassVar[t,:,:]*(self.latVar[:,:]<-30)!=0.)
+        scat2=ax.scatter(self.lonVar[index], self.latVar[index], c=self.MassVar[t,index[0],index[1]]
+            ,vmax=self.vmax
+            ,vmin=self.vmin
+            , norm = LogNorm()
+            ,transform=ccrs.PlateCarree()
+            ,edgecolor='none',s=0.6)
+        cbar=plt.colorbar(scat2)
+        cbar.set_label('hola')
+        return scat2,
+
+    def show(self):
+        plt.show()
+
+if __name__ == '__main__':
+    
+    ncfile = netCDF4.Dataset('/Users/imerino/Documents/These/python/Files/mesh_hgr.nc','a')
+    lonVar= np.array(ncfile.variables['nav_lon'])[0:300,:]
+    latVar= np.array(ncfile.variables['nav_lat'])[0:300,:]
+    e1tVar= np.array(ncfile.variables['e1t'])[:,0:300,:]
+    e2tVar= np.array(ncfile.variables['e2t'])[:,0:300,:]
+    ncfile.close()
+    
+    path='/Users/imerino/Documents/These/Results/ClimatoICB/climatoMonthGNM016_1998-2009.nc'
+    ncfile = netCDF4.Dataset(path,'a')
+    RunoffVar = np.array(ncfile.variables['Melt'])[:,0:300,:]*3600*24 #Kg/s-->mm/day
+    ncfile.close()
+    
+    ChampVar=RunoffVar
+    animationname=path+'/test.mp4'
+    a = animationGeneral(ChampVar,12,lonVar,latVar,-1,1,animationname)
+    #a.show()
+```
+
+
 
 > This is Markdown Cheatsheet for **MAD4Jekyll**, this Jekyll theme. Please check the raw content of this file for the markdown usage.
 
