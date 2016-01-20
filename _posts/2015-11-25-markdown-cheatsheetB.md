@@ -24,9 +24,9 @@ My initial idea (the most clean and elegant) was to create the axes once, and us
 Sadly, deepcopy method crashes with axis objects:
 
 ```
-
-NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead. 
+NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead.
 ```
+
 The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Those methods those does not seems to be implemented yet with the cartopy interface, so they does not take the transformation argument. and the updated data cannot be projected.
 
 Finally the best and quickest solution is to use the remove() method.
