@@ -11,31 +11,31 @@ categories: [Nemo, Python]
 ---
 #Animate NEMO results with Cartopy
 
-#### Cartopy is the best solutions I found to plot the NEMO results. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates, Resulting in very intuitive scripts
+##### Cartopy is the best solutions I found to plot the NEMO results. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates, Resulting in very intuitive scripts
 
-#### Some problems appear when we want to animate our NEMO results. In this post we'll try to solve some of then in the cleanest way.
+##### Some problems appear when we want to animate our NEMO results. In this post we'll try to solve some of then in the cleanest way.
  
-####The easiest way to produce animations with Python is using the animation module of Matplotlib. Hopefully, as mentioneg above, the Python library Cartopy allow us to deal with geospatial coordinates using Matplotlib at the same time. The basic idea of the animation module is to create an "update function" which will be called recursively by the animation generator. This "update function" produce a set of images that will be merged when the save method of the animation module is called.
-####In our case, since we are plotting data in maps, the axes are made with some heavy features as bathymetry contour lines, specific continent coastal lines, raster image... which make the axes generation very slow. Produce a simple montly animation by generating and regenerating the axis every single time the "update method" is called can make the animation script veeery slow.
-####The challenge here is to clean up the data that have be previously plotted, without removing the axes. That means that we can not use for instance fig.clean() or similar calls. My first idea (the most clean and elegant) was to create the axes once, and use the deepcopy method of the copy module at the interior of the update function. This would allow me to plot a new scatter plot every time the update function is called. Something like:
+#####The easiest way to produce animations with Python is using the animation module of Matplotlib. Hopefully, as mentioneg above, the Python library Cartopy allow us to deal with geospatial coordinates using Matplotlib at the same time. The basic idea of the animation module is to create an "update function" which will be called recursively by the animation generator. This "update function" produce a set of images that will be merged when the save method of the animation module is called.
+#####In our case, since we are plotting data in maps, the axes are made with some heavy features as bathymetry contour lines, specific continent coastal lines, raster image... which make the axes generation very slow. Produce a simple montly animation by generating and regenerating the axis every single time the "update method" is called can make the animation script veeery slow.
+#####The challenge here is to clean up the data that have be previously plotted, without removing the axes. That means that we can not use for instance fig.clean() or similar calls. My first idea (the most clean and elegant) was to create the axes once, and use the deepcopy method of the copy module at the interior of the update function. This would allow me to plot a new scatter plot every time the update function is called. Something like:
 ```python
 def update(self)
 	axesLocal=copy.deepcopy(axes)
 ```
-####Sadly, deepcopy method crashes with axis objects:
+#####Sadly, deepcopy method crashes with axis objects:
 
 ```
 NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead.
 ```
 
 
-####The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Which is a very nice practice when producing animations, Those methods do not seem to be implemented yet with the cartopy interface, and they do not take the transformation argument. The results is the data cannot be projected in your cartopy axes.
+#####The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Which is a very nice practice when producing animations, Those methods do not seem to be implemented yet with the cartopy interface, and they do not take the transformation argument. The results is the data cannot be projected in your cartopy axes.
 
-####Finally the best and quickest solution is to use the scatter.remove() method. This method removes the scatter instance that was created and asociated to a global varible by the "update method" called before. The axis and the figure remains 
+#####Finally the best and quickest solution is to use the scatter.remove() method. This method removes the scatter instance that was created and asociated to a global varible by the "update method" called before. The axis and the figure remains 
 
 
-#### The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).
-#### Main looks as simple as this:
+##### The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).
+##### Main looks as simple as this:
 
 ```python
 
@@ -80,7 +80,7 @@ if __name__ == '__main__':
     #a.show()
 ```
 
-### The main routine basically open the data and create and object of the class animationGeneral. This object is the film with the given name.
+#### The main routine basically open the data and create and object of the class animationGeneral. This object is the film with the given name.
 
 
 ```python
@@ -151,5 +151,5 @@ class animationGeneral(object):
         plt.show()
 ```
 
-In this example, `draAntarctica(ax)` is only called once, doing the animation script much lighter
+######In this example, `draAntarctica(ax)` is only called once, doing the animation script much lighter
 
