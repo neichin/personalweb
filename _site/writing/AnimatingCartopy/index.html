@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Just a personal site">
 
-        <title>Markdown Cheatsheet - Nacho Merino Personal Site</title>
+        <title>Animations with Cartopy in NEMO - Nacho Merino Personal Site</title>
 
-    <link rel="canonical" href="http://neichin.github.io/personalweb/writing/markdown-cheatsheet/">
+    <link rel="canonical" href="http://neichin.github.io/personalweb/writing/AnimatingCartopy/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href=" /personalweb/css/clean-blog.css">
@@ -66,10 +66,10 @@
                     <a href="/personalweb/publications/">Publications</a>
                 </li>
 <li>
-                    <a href="/personalweb/travels/">Travels</a>
+                    <a href="/personalweb/material/">Material</a>
                 </li>
 <li>
-                    <a href="/personalweb/tips/">Tips&Tricks</a>
+                    <a href="/personalweb/writing/">Tips&Tricks</a>
                 </li>
 <li>
                     <a href="/personalweb/search/" class="nav-search-link" title="SEARCH">
@@ -89,15 +89,11 @@
                 </li>
                 
                 <li>
-                    <a href="/personalweb/results/">Writing</a>
+                    <a href="/personalweb/material/">Material</a>
                 </li>
                 
                 <li>
-                    <a href="/personalweb/writing/">Writing</a>
-                </li>
-                
-                <li>
-                    <a href="/personalweb/">Nacho Merino</a>
+                    <a href="/personalweb/material/meltwater/">Publications</a>
                 </li>
                 
                 <li>
@@ -105,11 +101,11 @@
                 </li>
                 
                 <li>
-                    <a href="/personalweb/publications/">Publications</a>
+                    <a href="/personalweb/results/">Writing</a>
                 </li>
                 
                 <li>
-                    <a href="/personalweb/gallery/">Gallery</a>
+                    <a href="/personalweb/publications/">Publications</a>
                 </li>
                 
                 <li>
@@ -117,7 +113,15 @@
                 </li>
                 
                 <li>
-                    <a href="/personalweb/material/">Writing</a>
+                    <a href="/personalweb/gallery/">Gallery</a>
+                </li>
+                
+                <li>
+                    <a href="/personalweb/writing/">Tips and codes</a>
+                </li>
+                
+                <li>
+                    <a href="/personalweb/">Nacho Merino</a>
                 </li>
                 
                 <li>
@@ -166,28 +170,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1 style="color: #acd578;">Markdown Cheatsheet</h1>
+                <div class="site-headingSmall post-heading">
+                    <h1 style="color: #acd578;">Animations with Cartopy in NEMO</h1>
                     
-                    <h2 class="subheading">This is Markdown Cheatsheet for MAD4Jekyll</h2>
-                    
-                    <span class="meta">Posted by MADness on November 25, 2015</span>
+                    <span class="meta">Posted by Nacho on January 20, 2016</span>
 
 <span class="time-tag-categ" style="font-size:.45em;background-color: rgba(128, 128, 128, 0.45);">
 
 <i class="fa fa-clock-o"></i>&nbsp;
-2 minute read
+4 minute read
 
 
 
  
   &sim; Tagged with <i class="fa fa-tags"></i>&nbsp;:&nbsp;
-<a href="/personalweb/writing/tag/tag-name-one/" data-toggle="tooltip" title="Other posts tagged with tag-name-one" rel="tag">tag-name-one</a>&nbsp;&bull;&nbsp;<a href="/personalweb/writing/tag/tag-name-two/" data-toggle="tooltip" title="Other posts tagged with tag-name-two" rel="tag">tag-name-two</a>
+<a href="/personalweb/writing/tag/Nemo/" data-toggle="tooltip" title="Other posts tagged with Nemo" rel="tag">Nemo</a>&nbsp;&bull;&nbsp;<a href="/personalweb/writing/tag/Cartopy/" data-toggle="tooltip" title="Other posts tagged with Cartopy" rel="tag">Cartopy</a>&nbsp;&bull;&nbsp;<a href="/personalweb/writing/tag/Python/" data-toggle="tooltip" title="Other posts tagged with Python" rel="tag">Python</a>
 
 
           
      
-                           &sim; Filed in &nbsp;:&nbsp;<span class="post-tags"><a href="/personalweb/writing/category/cat01/" data-toggle="tooltip" title="Other posts filed in cat01 category" rel="tag">cat01</a>&nbsp;&bull;&nbsp;<a href="/personalweb/writing/category/cat02/" data-toggle="tooltip" title="Other posts filed in cat02 category" rel="tag">cat02</a></span>
+                           &sim; Filed in &nbsp;:&nbsp;<span class="post-tags"><a href="/personalweb/writing/category/Nemo/" data-toggle="tooltip" title="Other posts filed in Nemo category" rel="tag">Nemo</a>&nbsp;&bull;&nbsp;<a href="/personalweb/writing/category/Python/" data-toggle="tooltip" title="Other posts filed in Python category" rel="tag">Python</a></span>
                         
    </span>
 
@@ -204,174 +206,141 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 
-               				<blockquote>
-<p>This is Markdown Cheatsheet for <strong>MAD4Jekyll</strong>, this Jekyll theme. Please check the raw content of this file for the markdown usage.</p>
-</blockquote>
+               				<h1 id="animate-nemo-results-with-cartopy">Animate NEMO results with Cartopy</h1>
 
-<h2 id="typography-elements">Typography Elements</h2>
+<h5 id="cartopy-is-the-best-solutions-i-found-to-plot-the-nemo-results-the-integration-with-matplotlib-library-is-perfect-and-almost-all-his-plot-features-remains-as-easy-as-working-with-cartesian-coordinates-resulting-in-very-intuitive-scripts">Cartopy is the best solutions I found to plot the NEMO results. The integration with Matplotlib library is perfect and almost all his plot features remains as easy as working with cartesian coordinates, Resulting in very intuitive scripts</h5>
 
-<p>This is a paragraph. <strong>This text is bolded.</strong> This text is normal! <em>This text is italic.</em> We can  also <strong><em>combine</em></strong> them. A highlighted code looks like <code>ThisIsMyCode()</code>. This text is a <a href="#">hyperlink</a> or <a href="http://www.example.com">http://www.example.com</a>.</p>
+<h5 id="some-problems-appear-when-we-want-to-animate-our-nemo-results-in-this-post-we-39-ll-try-to-solve-some-of-then-in-the-cleanest-way">Some problems appear when we want to animate our NEMO results. In this post we&#39;ll try to solve some of then in the cleanest way.</h5>
 
-<hr>
+<h5 id="the-easiest-way-to-produce-animations-with-python-is-using-the-animation-module-of-matplotlib-hopefully-as-mentioneg-above-the-python-library-cartopy-allow-us-to-deal-with-geospatial-coordinates-using-matplotlib-at-the-same-time-the-basic-idea-of-the-animation-module-is-to-create-an-quot-update-function-quot-which-will-be-called-recursively-by-the-animation-generator-this-quot-update-function-quot-produce-a-set-of-images-that-will-be-merged-when-the-save-method-of-the-animation-module-is-called">The easiest way to produce animations with Python is using the animation module of Matplotlib. Hopefully, as mentioneg above, the Python library Cartopy allow us to deal with geospatial coordinates using Matplotlib at the same time. The basic idea of the animation module is to create an &quot;update function&quot; which will be called recursively by the animation generator. This &quot;update function&quot; produce a set of images that will be merged when the save method of the animation module is called.</h5>
 
-<h2 id="headings-h1-to-h6">Headings H1 to H6</h2>
+<h5 id="in-our-case-since-we-are-plotting-data-in-maps-the-axes-are-made-with-some-heavy-features-as-bathymetry-contour-lines-specific-continent-coastal-lines-raster-image-which-make-the-axes-generation-very-slow-produce-a-simple-montly-animation-by-generating-and-regenerating-the-axis-every-single-time-the-quot-update-method-quot-is-called-can-make-the-animation-script-veeery-slow">In our case, since we are plotting data in maps, the axes are made with some heavy features as bathymetry contour lines, specific continent coastal lines, raster image... which make the axes generation very slow. Produce a simple montly animation by generating and regenerating the axis every single time the &quot;update method&quot; is called can make the animation script veeery slow.</h5>
 
-<h1 id="h1-heading">H1 Heading</h1>
-
-<h2 id="h2-heading">H2 Heading</h2>
-
-<h3 id="h3-heading">H3 Heading</h3>
-
-<h4 id="h4-heading">H4 Heading</h4>
-
-<h5 id="h5-heading">H5 Heading</h5>
-
-<h6 id="h6-heading">H6 Heading</h6>
-
-<hr>
-
-<h2 id="footnote">Footnote</h2>
-
-<p>If you have some text that you want to refer with a footnote, do as follows. This is an example for the footnote number one <sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>. Add more footnotes, with link. <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
-
-<hr>
-
-<h2 id="blockquote">Blockquote</h2>
-
-<blockquote>
-<p>The roots of education are bitter, but the fruit is sweet. --Aristotle</p>
-</blockquote>
-
-<hr>
-
-<h2 id="list-items">List Items</h2>
-
-<ol>
-<li>First order list item</li>
-<li>Second item</li>
-</ol>
-
-<ul>
-<li>Unordered list can use asterisks</li>
-<li>Or minuses</li>
-<li>Or pluses</li>
-</ul>
-
-<hr>
-
-<h2 id="code-blocks">Code Blocks</h2>
-<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">var s = &quot;JavaScript syntax highlighting&quot;;
-alert(s);
-</code></pre></figure><figure class="highlight"><pre><code class="language-python" data-lang="python">s = &quot;Python syntax highlighting&quot;
-print s
-</code></pre></figure><figure class="highlight"><pre><code class="language-text" data-lang="text">No language indicated, so no syntax highlighting.
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
+<h5 id="the-challenge-here-is-to-clean-up-the-data-that-have-be-previously-plotted-without-removing-the-axes-that-means-that-we-can-not-use-for-instance-fig-clean-or-similar-calls-my-first-idea-the-most-clean-and-elegant-was-to-create-the-axes-once-and-use-the-deepcopy-method-of-the-copy-module-at-the-interior-of-the-update-function-this-would-allow-me-to-plot-a-new-scatter-plot-every-time-the-update-function-is-called-something-like">The challenge here is to clean up the data that have be previously plotted, without removing the axes. That means that we can not use for instance fig.clean() or similar calls. My first idea (the most clean and elegant) was to create the axes once, and use the deepcopy method of the copy module at the interior of the update function. This would allow me to plot a new scatter plot every time the update function is called. Something like:</h5>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">def update(self)
+    axesLocal=copy.deepcopy(axes)
 </code></pre></figure>
-<hr>
+<h5 id="sadly-deepcopy-method-crashes-with-axis-objects">Sadly, deepcopy method crashes with axis objects:</h5>
+<figure class="highlight"><pre><code class="language-text" data-lang="text">NotImplementedError: TransformNode instances can not be copied. Consider using frozen() instead.
+</code></pre></figure>
+<h5 id="the-second-idea-was-to-use-the-set_array-and-the-set_offets-methods-of-the-scatter-plot-to-update-the-plot-data-which-is-a-very-nice-practice-when-producing-animations-those-methods-do-not-seem-to-be-implemented-yet-with-the-cartopy-interface-and-they-do-not-take-the-transformation-argument-the-results-is-the-data-cannot-be-projected-in-your-cartopy-axes">The second idea was to use the set_array and the set_offets methods of the scatter plot to update the plot data. Which is a very nice practice when producing animations, Those methods do not seem to be implemented yet with the cartopy interface, and they do not take the transformation argument. The results is the data cannot be projected in your cartopy axes.</h5>
 
-<h2 id="table">Table</h2>
+<h5 id="finally-the-best-and-quickest-solution-is-to-use-the-scatter-remove-method-this-method-removes-the-scatter-instance-that-was-created-and-asociated-to-a-global-varible-by-the-quot-update-method-quot-called-before-the-axis-and-the-figure-remains">Finally the best and quickest solution is to use the scatter.remove() method. This method removes the scatter instance that was created and asociated to a global varible by the &quot;update method&quot; called before. The axis and the figure remains</h5>
 
-<h3 id="table-1-with-alignment">Table 1: With Alignment</h3>
+<h5 id="the-main-program-just-open-the-data-with-the-shape-temporal-latitud-longitud-in-this-example-i-only-need-the-300-first-latitude-values-temporal-dimension-is-12-one-per-month">The main program just open the data with the shape (temporal, latitud, longitud). In this example I only need the 300 first latitude values. Temporal dimension is 12 (one per month).</h5>
 
-<table><thead>
-<tr>
-<th>Tables</th>
-<th style="text-align: center">for</th>
-<th style="text-align: right">Markdown</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align: center">right-aligned</td>
-<td style="text-align: right">ok?</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align: center">centered</td>
-<td style="text-align: right">Got it?</td>
-</tr>
-<tr>
-<td>col 1 is</td>
-<td style="text-align: center">left-aligned</td>
-<td style="text-align: right">Alright!!!</td>
-</tr>
-</tbody></table>
+<h5 id="main-looks-as-simple-as-this">Main looks as simple as this:</h5>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">
+import netCDF4
+import numpy as np
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import pylab as m
+import matplotlib.cm as cm
+from matplotlib import animation
+from matplotlib.colors import LogNorm
 
-<h3 id="table-2-with-typography-elements">Table 2: With Typography Elements</h3>
+if __name__ == &#39;__main__&#39;:
 
-<table><thead>
-<tr>
-<th>Another</th>
-<th>table</th>
-<th>here</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><em>I</em></td>
-<td><code>am</code></td>
-<td><strong>row</strong></td>
-</tr>
-<tr>
-<td>1</td>
-<td>two</td>
-<td>III</td>
-</tr>
-</tbody></table>
+    #opening lon and lat values
+    ncfile = netCDF4.Dataset(&#39;/Path/to/Data/mesh_hgr.nc&#39;,&#39;a&#39;)
+    lonVar= np.array(ncfile.variables[&#39;nav_lon&#39;])[0:300,:]
+    latVar= np.array(ncfile.variables[&#39;nav_lat&#39;])[0:300,:]
+    ncfile.close()
 
-<hr>
+    #Opening the Icebergs Flux Data
+    path=&#39;/Path/to/Data/Climato_Icebergs.nc&#39;
+    ncfile = netCDF4.Dataset(path,&#39;a&#39;)
+    RunoffVar = np.array(ncfile.variables[&#39;Melt&#39;])[:,0:300,:]*3600*24 #Kg/s--&gt;mm/day
+    ncfile.close()
 
-<h2 id="horizontal-line">Horizontal Line</h2>
+    ChampVar=RunoffVar
 
-<p>The HTML <code>&lt;hr&gt;</code> element is for creating a &quot;thematic break&quot; between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+    #The MP4 file I want to produce
+    animationname=path+&#39;/test.mp4&#39;
 
-<ul>
-<li><code>___</code>: three consecutive underscores</li>
-<li><code>---</code>: three consecutive dashes</li>
-<li><code>***</code>: three consecutive asterisks</li>
-</ul>
+    #aniationGeneral(Field I want to plot,
+    #               Time steps , 
+    #               Longitud Field, 
+    #               Latitud Field,
+    #               Min Value of the colorbar,
+    #               Max Value of the colorbar,
+    #               File name
+    a = animationGeneral(ChampVar,12,lonVar,latVar,-1,1,animationname)
 
-<p>renders to:</p>
+    #Show at the end
+    #a.show()
+</code></pre></figure>
+<h4 id="the-main-routine-basically-open-the-data-and-create-and-object-of-the-class-animationgeneral-this-object-is-the-film-with-the-given-name">The main routine basically open the data and create and object of the class animationGeneral. This object is the film with the given name.</h4>
+<figure class="highlight"><pre><code class="language-python" data-lang="python">class animationGeneral(object):
+# First set up the figure, the axis, and the plot element we want to animate
+    def __init__(self, champ, stepNum,lon,lat,vmin,vmax,animationname):
+        #Global definitions
+        self.MassVar=champ
+        self.lonVar=lon
+        self.latVar=lat
+        self.t=0
+        self.vmin=vmin
+        self.vmax=vmax
 
-<hr>
+        #Figure
+        self.fig = plt.figure()
 
-<hr>
+        #Axes definition
+        self.ax = plt.axes(projection=ccrs.SouthPolarStereo())
+        self.ax.set_extent([-200, 200, -45, -45],ccrs.PlateCarree())
 
-<hr>
+        #The plot to animate
+        self.scat2=self.ax.scatter(0, 90, c=1
+            ,vmax=self.vmax
+            ,vmin=self.vmin
+            #,cmap=&#39;coolwarm&#39;
+            , norm = LogNorm()
+            ,transform=ccrs.PlateCarree(),edgecolor=&#39;none&#39;,s=0.6)
+        cbar=plt.colorbar(self.scat2)
+        cbar.set_label(&#39;Melt water Flux (mm/yr)&#39;)
 
-<h2 id="media">Media</h2>
+        #Adding my own Antarctica graphics
+        drawAntarctica(self.ax)
 
-<h3 id="youtube-embedded-iframe">YouTube Embedded Iframe</h3>
+        #Animation definitio
+        anim = animation.FuncAnimation(self.fig, self.update,np.arange(stepNum), interval=1, blit=False)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OuoaKai_L00" frameborder="0" allowfullscreen></iframe>
+        #Writer FFMpeg needed for mp4 film
+        mywriter = animation.FFMpegWriter()
+        anim.save(animationname, writer=mywriter,fps=1, extra_args=[&#39;-vcodec&#39;, &#39;libx264&#39;])
 
-<h3 id="image">Image</h3>
+    #No init_plot needed
+    def setup_plot(self):
 
-<p><img src="http://octodex.github.com/images/spectrocat.png" alt="Spectrocat"></p>
 
-<p>You also have the html option of adding an image in a post at a small size and the ability to click on it and zoom in a lightbox.</p>
 
-<p><code>&lt;p style=&quot;float: left; font-size: 9pt; margin-right:1em;&quot;&gt; 
-   &lt;a href=&quot;/personalweb/img/blog/lb-lrg/img1.jpg&quot; data-lightbox=&quot;gallery1&quot; data-title=&quot;The first image&quot; style=&quot;float: left; margin-right: -10%; margin-bottom: 1em;&quot;&gt;
-     &lt;img src=&quot;/personalweb/img/blog/lb-sm/lbs01.png&quot;&gt;Image#01&lt;/a&gt;&lt;/p&gt;</code></p>
+    # animation function to be called nsteps times plus the initialisation since init_func isn&#39;t defined
+    def update(self,i):
+        t=i
+        print t,&#39;setup&#39;
 
-<h2 id="for-a-more-detailed-syntax-with-markdown-please-visit-daringfireball-net">For a more detailed syntax with Markdown, please visit <a href="http://daringfireball.net/projects/markdown/syntax">DaringFireball.net</a></h2>
+        #Index of the dat to be extrated
+        index=np.where(self.MassVar[t,:,:]*(self.latVar[:,:]&lt;-30)!=0.)
+        #Remove previous data plotted
+        self.scat2.remove()
+        #The plot with Logaritmic scale
+        self.scat2=self.ax.scatter(self.lonVar[index], self.latVar[index], c=self.MassVar[t,index[0],index[1]]
+            ,vmax=self.vmax
+            ,vmin=self.vmin
+            #,cmap=&#39;coolwarm&#39;
+            , norm = LogNorm()
+            ,transform=ccrs.PlateCarree(),edgecolor=&#39;none&#39;,s=0.6)
 
-<h6 id="image-source-unsplash">Image Source: <a href="https://unsplash.com/photos/6g0KJWnBhxg">UNSPLASH</a></h6>
+        return self.scat2,    
 
-<div class="footnotes">
-<hr>
-<ol>
 
-<li id="fn1">
-<p>Footnote number one.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
-</li>
+    def show(self):
+        plt.show()
+</code></pre></figure>
+<h6 id="in-this-example-draantarctica-ax-is-only-called-once-doing-the-animation-script-much-lighter">In this example, <code>draAntarctica(ax)</code> is only called once, doing the animation script much lighter</h6>
 
-<li id="fn2">
-<p>A footnote you can link to - <a href="#">click here!</a>&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
-</li>
-
-</ol>
-</div>
+<iframe width="420" height="315" src="files/animationIcebergsMonth.mp4" frameborder="0" allowfullscreen></iframe>
 
 
                 <br>
@@ -382,7 +351,7 @@ But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
     </p>
     <ul class="social-mini">
         <li>
-            <a href="https://twitter.com/intent/tweet?text=&quot;Markdown Cheatsheet&quot;%20http://neichin.github.io/personalweb/writing/markdown-cheatsheet/%20via%20&#64;"
+            <a href="https://twitter.com/intent/tweet?text=&quot;Animations with Cartopy in NEMO&quot;%20http://neichin.github.io/personalweb/writing/AnimatingCartopy/%20via%20&#64;"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" data-toggle="tooltip" title="Share on Twitter" itemprop="Twitter">
                 <span class="fa-stack fa-lg" style="
 color: #223333;font-size:1em;">
@@ -393,7 +362,7 @@ color: #223333;font-size:1em;">
             </a>
         </li>
         <li>
-            <a  href="https://www.facebook.com/sharer/sharer.php?u=http://neichin.github.io/personalweb/writing/markdown-cheatsheet/"
+            <a  href="https://www.facebook.com/sharer/sharer.php?u=http://neichin.github.io/personalweb/writing/AnimatingCartopy/"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" data-toggle="tooltip" title="Share on Facebook" itemprop="Facebook">
                 <span class="fa-stack fa-lg" style="
 color: #223333;font-size:1em;">
@@ -404,7 +373,7 @@ color: #223333;font-size:1em;">
             </a>
         </li>
         <li>
-            <a href="https://plus.google.com/share?url=http://neichin.github.io/personalweb/writing/markdown-cheatsheet/"
+            <a href="https://plus.google.com/share?url=http://neichin.github.io/personalweb/writing/AnimatingCartopy/"
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" data-toggle="tooltip" title="Share on Google plus" itemprop="GooglePlus">
                 <span class="fa-stack fa-lg" style="
 color: #223333;font-size:1em;">
@@ -415,11 +384,6 @@ color: #223333;font-size:1em;">
             </a>
         </li>
     </ul></div>
-                        <div class="post-author text-center">                       
-	        <img src="/img/avatar.jpg" alt="MADness's photo" itemprop="image" class="post-avatar img-circle img-responsive"/>    
-	    <h4 class="bordered-bottom vcard author">By <span itemprop="name" class="fn"><a href="/about" title="About MADness" itemprop="url">MADness</a></span></h4>
-	    <p>MAD for Jekyll</p>
-</div> 
 <div id="disqus_thread"></div>
 <script>
         var disqus_config = function () {
@@ -443,14 +407,6 @@ color: #223333;font-size:1em;">
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/personalweb/writing/lightbox/" data-toggle="tooltip" data-placement="top" title="Lightbox">&larr; Previous Post</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/personalweb/writing/markdown-cheatsheetB/" data-toggle="tooltip" data-placement="top" title="Animations with Cartopy in NEMO">Next Post &rarr;</a>
-                    </li>
                     
                 </ul>
 

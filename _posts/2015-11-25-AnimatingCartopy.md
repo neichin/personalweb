@@ -1,13 +1,13 @@
 ---
-layout: post
-title: Freshwater
-subtitle: fressssh
+layout: postPersonal
+title: Animations with Cartopy in NEMO
+subtitle: 
 date:       2016-1-20 12:00:00
 author:     "Nacho"
 header-img: "img/blog/header/post-bg-02.jpg"
 thumbnail: /img/blog/thumbs/thumb02.png
-tags: [Icebergs, fresh]
-categories: [Material, NEMO]
+tags: [Nemo, Cartopy, Python]
+categories: [Nemo, Python]
 ---
 #Animate NEMO results with Cartopy
 
