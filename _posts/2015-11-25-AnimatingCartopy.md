@@ -153,6 +153,6 @@ class animationGeneral(object):
 
 ######In this example, `draAntarctica(ax)` is only called once, doing the animation script much lighter
 
-{% video {{site.baseurl}}/_post/files/animationIcebergsMonth.mp4 %}
+{% video {{site.baseurl}}/_posts/files/animationIcebergsMonth.mp4 %}
 
 
