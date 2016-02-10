@@ -10,7 +10,7 @@ search: true
 share: true
 comments: true
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,video_tag]
 baseurl: /personalweb
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
 readtime: true
