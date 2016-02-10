@@ -153,5 +153,6 @@ class animationGeneral(object):
 
 ######In this example, `draAntarctica(ax)` is only called once, doing the animation script much lighter
 
-<iframe width="420" height="315" src="files/animationIcebergsMonth.mp4" frameborder="0" allowfullscreen></iframe>
+{% video {{site.baseurl}}/_post/files/animationIcebergsMonth.mp4 %}
+
 
