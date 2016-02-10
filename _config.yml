@@ -13,10 +13,6 @@ comments: true
 gems: [jekyll-paginate,-octopress-video_tag,octopress-video_tag]
 baseurl: /personalweb
 
-group :jekyll_plugins do
-  gem 'octopress-video-tag'
-end
-
 # Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
 readtime: true
 
