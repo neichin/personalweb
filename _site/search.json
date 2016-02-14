@@ -4,7 +4,7 @@
       "title"    : "Animations with Cartopy in NEMO",
       "category" : "",
       "tags"     : "Nemo, Cartopy, Python",
-      "url"      : "/personalweb/writing/AnimatingCartopy/",
+      "url"      : "/personalweb/writing/Animation-cartopy/",
       "date"     : "2016-01-20 13:00:00 +0100",
       "content"   : "[\n  {% for post in site.posts %}\n    {\n      \"title\"    : \"{{ post.title | escape }}\",\n      \"category\" : \"{{ post.category }}\",\n      \"tags\"     : \"{{ post.tags | join: ', ' }}\",\n      \"url\"      : \"{{ site.baseurl }}{{ post.url }}\",\n      \"date\"     : \"{{ post.date }}\",\n      \"content\"   : {{ page.content | jsonify }}\n    } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n  ,\n  {% for page in site.pages %}\n   {\n     {% if page.title != nil %}\n        \"title\"    : \"{{ page.title | escape }}\",\n        \"category\" : \"{{ page.category }}\",\n        \"tags\"     : \"{{ page.tags | join: ', ' }}\",\n        \"url\"      : \"{{ site.baseurl }}{{ page.url }}\",\n        \"date\"     : \"{{ page.date }}\",\n        \"content\"   : {{ page.content | jsonify }}\n     {% endif %}\n   } {% unless forloop.last %},{% endunless %}\n  {% endfor %}\n]"
     } 
@@ -165,7 +165,7 @@
         "tags"     : "",
         "url"      : "/personalweb/writing/",
         "date"     : "",
-        "content"   : "\n\n\n \n  \n  \n\n\n<div class=\"post-preview\">\n    \n<a href=\"/personalweb/writing/AnimatingCartopy/\">\n        \n\t<img src=\"/img/blog/thumbs/thumb02.png\" style=\"float: left; margin: 8px 10px 0px 10px;\">\n\t\n \n \n        <h2 class=\"post-title\">     Animations with Cartopy in NEMO\n        </h2>\n        \n    </a>\n    <p class=\"post-meta\">Posted by Nacho on January 20, 2016</p>\n</div>\n \n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
+        "content"   : "\n\n\n \n  \n  \n\n\n<div class=\"post-preview\">\n    \n<a href=\"/personalweb/writing/Animation-cartopy/\">\n        \n\t<img src=\"/img/blog/thumbs/thumb02.png\" style=\"float: left; margin: 8px 10px 0px 10px;\">\n\t\n \n \n        <h2 class=\"post-title\">     Animations with Cartopy in NEMO\n        </h2>\n        \n    </a>\n    <p class=\"post-meta\">Posted by Nacho on January 20, 2016</p>\n</div>\n \n<p>&nbsp;</p>\n\n<!-- Pager -->\n\n\n<br>\n<h6>Image Source: <a href=\"https://unsplash.com/photos/8muUTAmcWU4\">UNSPLASH</a>\n\n"
      
    } ,
   
