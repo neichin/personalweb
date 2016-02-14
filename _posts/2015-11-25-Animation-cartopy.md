@@ -153,4 +153,6 @@ class animationGeneral(object):
 
 ######In this example, `draAntarctica(ax)` is only called once, doing the animation script much lighter
 
-{% video {{site.baseurl}}/videos/animationIcebergsMonth.mp4 %}
+<video width='720' height='480' preload='none'>
+   <source src='{{site.baseurl}}/videos/animationIcebergsMonth.mp4' type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"'/>
+</video>
