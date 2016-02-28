@@ -8,7 +8,7 @@ header-img: "img/blog/header/post-bg-02.jpg"
 thumbnail: /img/blog/thumbs/thumb02.png
 tags: [Nemo, Cartopy, Python]
 categories: [Nemo, Python]
-published: false
+published: true
 ---
 #Animate NEMO results with Cartopy
 

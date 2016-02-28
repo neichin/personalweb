@@ -1,7 +1,7 @@
 ---
 layout: postPersonal
-title: Plotting continents: shapefiles and tif images with Cartopy
-subtitle: dfd
+title: Plotting continents... shapefiles and tif images with Cartopy
+subtitle:
 date:       2016-1-20 12:00:00
 author:     "Nacho"
 header-img: "img/blog/header/post-bg-02.jpg"
