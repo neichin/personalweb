@@ -130,14 +130,14 @@ class South(cartopy.crs.Projection):
     cmap2._lut[10:cmap2.N+3-1,-1] = 0.99
 ```
 
-#### Basically, a color bar from white to black is created from the hillshade data, and the transparency is set to zero for the first 10 altitude levels (so the ocean and coastal regions in the image won't be visible). This color bar will be used during the drawing of the hillshade as we will see.
+#### Basically, a color bar from white to black is created from the hillshade data, and the transparency is set to zero for the first 10 altitude levels (so the ocean and coastal regions in the image wont be visible). This color bar will be used during the drawing of the hillshade as we will see.
 
 ```python
 	cax=ax.imshow(arr[:,:].transpose(),extent=extent,transform=South2(),cmap='Blues',
 		alpha=0.7)
 	ax.imshow(arr2[:,:].transpose(),extent=extent2,transform=South3(),cmap=cmap2
 		,zorder=2)
-    #cbar = plt.colorbar(cax)
+	#cbar = plt.colorbar(cax)
 ```
 
 ###### Finally, both images are plotted by using imshow function from matplotlib. The projection for both plots are created in the same way than South() (see above). 
