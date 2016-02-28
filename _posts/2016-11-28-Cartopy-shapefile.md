@@ -1,7 +1,7 @@
 ---
 layout: postPersonal
 title: Plotting continents: shapefiles and tif images with Cartopy
-subtitle: 
+subtitle: dfd
 date:       2016-1-20 12:00:00
 author:     "Nacho"
 header-img: "img/blog/header/post-bg-02.jpg"
@@ -11,6 +11,7 @@ categories: [Nemo, Python]
 share: true
 published: true
 ---
+
 #Plotting Antarctica with Cartopy and GDAL libraries
 
 ##### I will explain the way I plot the Antarctic continent including extra-features from tiff files like the mountains relief and/or the ocean bathymetry. All those files (shapefiles and tiff images) are extracted from the Antarctic Digital DataBase (http://www.add.scar.org/home/add7), containing a long list of digital data open to be downloaded by any user. The method I will explain can be applied to other parts of the world with different data or projections, you just need to get the source .shp file corresponding to your region of interest, and tiff images (for example photos form satellites). This is just an example to illustrate the flexibility of those tools, the GDAL and ShapeReader from Cartopy.
