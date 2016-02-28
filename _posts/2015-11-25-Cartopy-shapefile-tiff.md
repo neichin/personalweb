@@ -8,6 +8,8 @@ header-img: "img/blog/header/post-bg-02.jpg"
 thumbnail: /img/blog/thumbs/thumb02.png
 tags: [Nemo, Cartopy, Python]
 categories: [Nemo, Python]
+share: true
+published: true
 ---
 #Plotting Antarctica with Cartopy and GDAL libraries
 
