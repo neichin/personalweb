@@ -14,7 +14,7 @@ published: true
 
 #Plotting Antarctica with Cartopy and GDAL libraries
 
-##### I will explain the way I plot the Antarctic continent including extra-features from tiff files like the mountains relief and/or the ocean bathymetry. All those files (shapefiles and tiff images) are extracted from the Antarctic Digital DataBase (http://www.add.scar.org/home/add7), containing a long list of digital data open to be downloaded by any user. The method I will explain can be applied to other parts of the world with different data or projections, you just need to get the source .shp file corresponding to your region of interest, and tiff images (for example photos form satellites). This is just an example to illustrate the flexibility of those tools, the GDAL and ShapeReader from Cartopy.
+##### I will explain the way I plot the Antarctic continent including extra-features from tiff files like the mountains relief and/or the ocean bathymetry. All those files (shapefiles and tiff images) are extracted from the Antarctic Digital DataBase (<http://http://www.add.scar.org/home/add7>), containing a long list of digital data open to be downloaded by any user. The method I will explain can be applied to other parts of the world with different data or projections, you just need to get the source .shp file corresponding to your region of interest, and tiff images (for example photos from satellites). This is just an example to illustrate the flexibility of those tools, the GDAL and ShapeReader from Cartopy.
 ##### First of all he have to create the shapefile reader. This is the python object for reading .shp, which includes various geometries (lines, surfaces or points).
 
 ```python
@@ -35,7 +35,7 @@ reader = shpreader.Reader(fname)
             ax.add_geometries(line.geometry, South(),facecolor='none'
             	, edgecolor='black',linewidth=0.5, zorder=5)
 ```
-##### Here, the elements of my file cst10_polygon.shp have an attribute called cst10srf which tells me wether the element is part of an ice shelf or not. Ice shelf elements are plotted in grey with a black bordure (width of 0.2). Land elements will have just a thicker bordure. Axes object ax needs to be previously created by defining their projection and extent, The method add_geometries needs the projection the data will be plotted. According to the information given by Antarctic Digital Database, we can create my own projection South() extending the Projection class from Cartopy:
+##### Here, the elements of my file cst10_polygon.shp have an attribute called cst10srf which tells me wether the element is part of an ice shelf or not. Ice shelf elements are plotted in grey with a black bordure (width of 0.2). Land elements will have just a thicker bordure. Axes object `ax` needs to be previously created by defining their projection and extent, The method `add_geometries()` needs the projection of the data to be plotted. According to the information given by Antarctic Digital Database, we can create my own projection `South()` extending the Projection class from Cartopy:
 ```python
 class South(cartopy.crs.Projection):
     def __init__(self):
@@ -142,5 +142,9 @@ class South(cartopy.crs.Projection):
 ```
 
 ##### Finally, both images are plotted by using imshow function from matplotlib. The projection for both plots are created in the same way than South() (see above). 
+
+##### Here an example of a figure having all those features decribed:
+
+![alt text]({{site.baseurl}}/img/ScenariosImage.png "Example")
 
 
