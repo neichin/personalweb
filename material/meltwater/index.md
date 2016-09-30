@@ -51,7 +51,7 @@ Glacial freshwater forcing in the Southern Ocean
 
 
 
-- #####Iceberg climatology with climatological atmospheric forcing. [here](../Iceberg_Climatology_Merino.nc)
+- #####Iceberg climatology with climatological atmospheric forcing. [here]({{site.baseurl}}/material/Iceberg_Climatology_Merino.nc)
 
 - #####Iceberg climatology with interannual forcing.
 
