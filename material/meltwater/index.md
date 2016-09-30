@@ -51,15 +51,19 @@ Glacial freshwater forcing in the Southern Ocean
 
 
 
-- #####Iceberg climatology with climatological atmospheric forcing. [here]({{site.baseurl}}/material/Iceberg_Climatology_Merino.nc)
+- #####[Iceberg climatology with climatological atmospheric forcing.]({{site.baseurl}}/material/Iceberg_Climatology_Merino.nc)
 
-- #####Iceberg climatology with interannual forcing.
+- #####[Iceberg climatology with interannual forcing.]({{site.baseurl}}/material/Iceberg_Interannual_Merino.nc)
 
 - #####Ice shelves basal melt fluxes
 
+###How to cite:
+
+#### Please use the following reference to cite this work when using the iceberg climatology, the icebergs sources or the meltwater distribution: Merino, N. J. Le Sommer, G. Durand, N. Jourdain, G. Madec, P. Matthiot and J. Tournadre. Antarctic icebergs melt over the Southern Ocean: climatology and impact on sea-ice.
+
 ###References:
 
-- #####Merino, N. J. Le Sommer, G. Durand, N. Jourdain, G. Madec, P. Matthiot and J. Tournadre. Antarctic icebergs melt over the Southern Ocean: climatology and impact on sea-ice. Accepted for publication in Ocean Modelling, in press..
+- #####Merino, N. J. Le Sommer, G. Durand, N. Jourdain, G. Madec, P. Matthiot and J. Tournadre. Antarctic icebergs melt over the Southern Ocean: climatology and impact on sea-ice. Ocean Modelling. 2016
 
 - #####.Depoorter, M. A., Bamber, J. L., Griggs, J. A., Lenaerts, J. T. M., Ligtenberg, S. R. M., van den Broeke, M. R., & Moholdt, G. (2013). Calving fluxes and basal melt rates of Antarctic ice shelves. Nature, 502(7469), 89-92.
  
