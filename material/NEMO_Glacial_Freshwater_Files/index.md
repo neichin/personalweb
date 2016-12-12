@@ -30,7 +30,7 @@ header-img: "img/weather_icebergs2.jpg"
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
  -->
 
-Python tool for writing calving and melting input files for NEMO / NEMO-ICB.
+Writing calving and melting input files for NEMO / NEMO-ICB.
 
 #####This tool is adapted for preparing the input files needed by NEMO and NEMO-ICB in order to consider the freshwater forcing described in Merino et al 2016. Functions and ice shelves definition are specified in NEMO_ICB_File.py and data.py respectively. Rest of python files in the repertory contains examples of use of the library.
 
