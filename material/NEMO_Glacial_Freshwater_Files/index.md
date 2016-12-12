@@ -1,7 +1,7 @@
 ---
 layout: page2
 description: "Python tool for preparing NEMO and NEMO/ICB glacial freshwater input files"
-title: "NEMO_Glacial_Freshwater_Files python tool"
+title: "NEMO Glacial Freshwater Files"
 header-img: "img/weather_icebergs2.jpg"
 ---
   
